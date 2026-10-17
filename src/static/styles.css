@@ -58,20 +58,112 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  padding: 18px;
+  border: 1px solid #e0e4ef;
+  border-left: 4px solid #3949ab;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.07);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 35, 126, 0.12);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.1rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participant-section {
+  margin-top: 16px;
+  padding: 13px 15px;
+  border: 1px solid #e4e8fa;
+  border-radius: 8px;
+  background: #f5f6ff;
+}
+
+.participant-section h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.participant-count {
+  display: inline-flex;
+  min-width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: #e2e7ff;
+  color: #283593;
+  font-size: 0.8rem;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  color: #424a60;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.participants-list li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #f0c8ce;
+  border-radius: 50%;
+  background: #fff;
+  color: #b42332;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.remove-participant:hover {
+  background: #ffebee;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.no-participants {
+  margin-bottom: 0;
+  color: #68708a;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .form-group {
